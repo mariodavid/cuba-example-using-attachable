@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="com.company.ceua.web.customer.CustomerEdit"
+        datasource="customerDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.company.ceua.web.customer">
+    <dsContext>
+        <datasource id="customerDs"
+                    class="com.company.ceua.entity.Customer"
+                    view="customer-view">
+            <collectionDatasource id="ordersDs"
+                                  property="orders"/>
+        </datasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="windowActions"
+            spacing="true">
+
+        <buttonsPanel id="buttonsPanel"
+                      alwaysVisible="true">
+        </buttonsPanel>
+        <fieldGroup id="fieldGroup"
+                    datasource="customerDs">
+            <column width="250px">
+                <field property="name"/>
+            </column>
+        </fieldGroup>
+        <groupBox id="ordersBox"
+                  caption="msg://com.company.ceua.entity/Customer.orders">
+            <table id="ordersTable"
+                   height="200px"
+                   width="100%">
+                <actions>
+                    <action id="create"/>
+                    <action id="edit"/>
+                    <action id="remove"/>
+                </actions>
+                <columns>
+                    <column id="orderDate"/>
+                </columns>
+                <rows datasource="ordersDs"/>
+                <buttonsPanel>
+                    <button action="ordersTable.create"/>
+                    <button action="ordersTable.edit"/>
+                    <button action="ordersTable.remove"/>
+                </buttonsPanel>
+            </table>
+        </groupBox>
+        <frame id="windowActions"
+               screen="editWindowActions"/>
+    </layout>
+</window>
