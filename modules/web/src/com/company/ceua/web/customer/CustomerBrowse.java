@@ -1,8 +1,8 @@
 package com.company.ceua.web.customer;
 
 import de.balvi.cuba.declarativecontrollers.web.browse.AnnotatableAbstractLookup;
-import de.diedavids.cuba.attachable.web.HasAttachments;
+import de.diedavids.cuba.attachable.web.WithAttachments;
 
-@HasAttachments(listComponent = "customersTable")
+@WithAttachments(listComponent = "customersTable")
 public class CustomerBrowse extends AnnotatableAbstractLookup {
 }
