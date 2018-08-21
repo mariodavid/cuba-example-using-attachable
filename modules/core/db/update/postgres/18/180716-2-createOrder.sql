@@ -1,0 +1,2 @@
+alter table CEUA_ORDER add constraint FK_CEUA_ORDER_ON_CUSTOMER foreign key (CUSTOMER_ID) references CEUA_CUSTOMER(ID);
+create index IDX_CEUA_ORDER_ON_CUSTOMER on CEUA_ORDER (CUSTOMER_ID);
