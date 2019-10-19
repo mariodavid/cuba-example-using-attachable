@@ -1,46 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
         caption="msg://editorCaption"
-        class="com.company.ceua.web.customer.CustomerEdit"
-        datasource="customerDs"
-        focusComponent="fieldGroup"
+        focusComponent="form"
         messagesPack="com.company.ceua.web.customer">
-    <dsContext>
-        <datasource id="customerDs"
-                    class="com.company.ceua.entity.Customer"
-                    view="customer-view">
-            <collectionDatasource id="ordersDs"
-                                  property="orders"/>
-        </datasource>
-    </dsContext>
+    <data>
+        <instance id="customerDc"
+                  class="com.company.ceua.entity.Customer"
+                  view="customer-view">
+            <loader/>
+            <collection id="ordersDc" property="orders"/>
+        </instance>
+    </data>
     <dialogMode height="600"
                 width="800"/>
-    <layout expand="windowActions"
-            spacing="true">
-
-        <buttonsPanel id="buttonsPanel"
-                      alwaysVisible="true">
-        </buttonsPanel>
-        <fieldGroup id="fieldGroup"
-                    datasource="customerDs">
+    <layout expand="editActions" spacing="true">
+        <form id="form" dataContainer="customerDc">
             <column width="250px">
-                <field property="name"/>
+                <textField id="nameField" property="name"/>
             </column>
-        </fieldGroup>
-        <groupBox id="ordersBox"
-                  caption="msg://com.company.ceua.entity/Customer.orders">
-            <table id="ordersTable"
-                   height="200px"
-                   width="100%">
+        </form>
+        <groupBox id="ordersBox" caption="msg://com.company.ceua.entity/Customer.orders">
+            <table id="ordersTable" dataContainer="ordersDc" width="100%" height="200px">
                 <actions>
-                    <action id="create"/>
-                    <action id="edit"/>
-                    <action id="remove"/>
+                    <action id="create" type="create"/>
+                    <action id="edit" type="edit"/>
+                    <action id="remove" type="remove"/>
                 </actions>
                 <columns>
                     <column id="orderDate"/>
                 </columns>
-                <rows datasource="ordersDs"/>
                 <buttonsPanel>
                     <button action="ordersTable.create"/>
                     <button action="ordersTable.edit"/>
@@ -48,7 +36,9 @@
                 </buttonsPanel>
             </table>
         </groupBox>
-        <frame id="windowActions"
-               screen="editWindowActions"/>
+        <hbox id="editActions" spacing="true">
+            <button action="windowCommitAndClose"/>
+            <button action="windowClose"/>
+        </hbox>
     </layout>
 </window>

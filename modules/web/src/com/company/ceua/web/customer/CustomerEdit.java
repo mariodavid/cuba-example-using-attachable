@@ -1,9 +1,11 @@
 package com.company.ceua.web.customer;
 
+import com.haulmont.cuba.gui.screen.*;
 import com.company.ceua.entity.Customer;
-import de.balvi.cuba.declarativecontrollers.web.editor.AnnotatableAbstractEditor;
-import de.diedavids.cuba.attachable.web.WithAttachments;
 
-@WithAttachments
-public class CustomerEdit extends AnnotatableAbstractEditor<Customer> {
+@UiController("ceua$Customer.edit")
+@UiDescriptor("customer-edit.xml")
+@EditedEntityContainer("customerDc")
+@LoadDataBeforeShow
+public class CustomerEdit extends StandardEditor<Customer> {
 }

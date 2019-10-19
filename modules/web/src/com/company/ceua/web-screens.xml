@@ -5,10 +5,6 @@
             template="com/company/ceua/web/product/product-browse.xml"/>
     <screen id="ceua$Product.edit"
             template="com/company/ceua/web/product/product-edit.xml"/>
-    <screen id="ceua$Customer.browse"
-            template="com/company/ceua/web/customer/customer-browse.xml"/>
-    <screen id="ceua$Customer.edit"
-            template="com/company/ceua/web/customer/customer-edit.xml"/>
     <screen id="ceua$Order.edit"
             template="com/company/ceua/web/order/order-edit.xml"/>
 </screen-config>
