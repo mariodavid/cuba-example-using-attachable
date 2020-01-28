@@ -48,12 +48,12 @@ cuba {
     tomcat {
         dir = "$project.rootDir/deploy/tomcat"
     }
-}
 
+}
 dependencies {
     appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
     appComponent("de.balvi.cuba.declarativecontrollers:declarativecontrollers-global:0.9.0")
-    appComponent("de.diedavids.cuba.attachable:attachable-global:0.7.0")
+    appComponent("de.diedavids.cuba.attachable:attachable-global:0.7.1-SNAPSHOT")
 
 }
 

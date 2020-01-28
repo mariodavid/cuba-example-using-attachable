@@ -41,7 +41,7 @@
             <DependencyModelState>
               <option name="group" value="de.diedavids.cuba.attachable" />
               <option name="name" value="attachable-global" />
-              <option name="version" value="0.7.0-SNAPSHOT" />
+              <option name="version" value="0.7.1-SNAPSHOT" />
             </DependencyModelState>
           </list>
         </option>
@@ -60,7 +60,7 @@
       <map>
         <entry key="com.haulmont.cuba" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.haulmont.cuba/cuba-core/7.1.1/c794239ddfcb259598676480d34d040ae36f60de/cuba-core-7.1.1-db.zip" />
         <entry key="de.balvi.cuba.declarativecontrollers" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.balvi.cuba.declarativecontrollers/declarativecontrollers-core/0.9.0/fc5616ebb308258201b15b6f91993dbc4593f70e/declarativecontrollers-core-0.9.0-db.zip" />
-        <entry key="de.diedavids.cuba.attachable" value="$MAVEN_REPOSITORY$/de/diedavids/cuba/attachable/attachable-core/0.7.0-SNAPSHOT/attachable-core-0.7.0-SNAPSHOT-db.zip" />
+        <entry key="de.diedavids.cuba.attachable" value="$MAVEN_REPOSITORY$/de/diedavids/cuba/attachable/attachable-core/0.7.1-SNAPSHOT/attachable-core-0.7.1-SNAPSHOT-db.zip" />
         <entry key="de.diedavids.cuba.entitysoftreference" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.diedavids.cuba.entitysoftreference/entity-soft-reference-core/0.6.5/eeeaeec01b02c72cd27f81c3a97a42d5a61c1a4a/entity-soft-reference-core-0.6.5-db.zip" />
         <entry key="de.diedavids.cuba.taggable" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.diedavids.cuba.taggable/taggable-core/0.5.3/26afe39299417f6a4ae988eb82af0e15305c4244/taggable-core-0.5.3-db.zip" />
       </map>
