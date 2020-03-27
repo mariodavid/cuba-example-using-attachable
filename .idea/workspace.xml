@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c73b4b5-807e-474f-b2d8-ee43c74b879c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/cuba-project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cuba-project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/src/com/company/ceua/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/src/com/company/ceua/app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/core/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/core/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/src/com/company/ceua/web-app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/src/com/company/ceua/web-app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studio-intellij.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studio-intellij.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
